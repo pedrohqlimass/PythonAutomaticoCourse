@@ -5,7 +5,6 @@
 # Colocar a primeira letra de cada palavra em maiúsculo
 
 frase = "    @prendendo @ progr@m@r   "
-frase = frase.strip()
-frase = frase.replace('@','a')
+frase = frase.strip().replace('@','a').capitalize()
 
 print(f"Frase corrigida: {frase}")
