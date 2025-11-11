@@ -11,13 +11,13 @@ from pathlib import Path
 
 
 def criar_arquivos():
-    pasta = Path(r"gerenciamento_de_arquivos\exercicios\dados\entrada")
+    pasta = Path(r"gerenciamento_de_arquivos\paths\exercicio\dados\entrada")
     arquivos = ["dados1.txt", "dados2.txt", "dados3.txt"]
 
     for arquivo in arquivos:
         (pasta / arquivo).touch(exist_ok=True)
 
 def listar_arquivos():
-    pasta = Path(r"gerenciamento_de_arquivos\exercicios\dados\entrada")
+    pasta = Path(r"gerenciamento_de_arquivos\paths\exercicio\dados\entrada")
     for arquivo in pasta.glob("*txt"):
         print(arquivo)

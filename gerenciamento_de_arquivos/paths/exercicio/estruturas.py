@@ -11,7 +11,7 @@ from pathlib import Path
 
 
 def criar_estrutura_pastas():
-    base = Path(r"gerenciamento_de_arquivos\exercicios")
+    base = Path(r"gerenciamento_de_arquivos\paths\exercicio")
     pastas = ["dados", "relatorios"]
     subpastas = ["entrada", "saida"]
 

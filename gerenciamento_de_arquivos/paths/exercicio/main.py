@@ -2,7 +2,7 @@ from estruturas import *
 from arquivos import *
 
 
-base = Path(r"gerenciamento_de_arquivos\exercicios")
+base = Path(r"gerenciamento_de_arquivos\paths\exercicio")
 dados_entrada = base / "dados" / "entrada"
 
 while True:
@@ -38,12 +38,12 @@ while True:
             case 4:
                 if not (base / "dados").exists():
                     print(f"A pasta 'dados' não existe! Crie a estrutura primeiro.\n{'-'*28}")
-                apagar_estrutura_pastas(Path(r"gerenciamento_de_arquivos\exercicios\dados"))
+                apagar_estrutura_pastas(Path(r"gerenciamento_de_arquivos\paths\exercicio\dados"))
                 print(f"A pasta 'dados' foi apagada.\n{'-'*28}")
             case 5:
                 if not (base / "relatorios").exists():
                     print(f"A pasta 'relatorios' não existe! Crie a estrutura primeiro.\n{'-'*30}")
-                apagar_estrutura_pastas(Path(r"gerenciamento_de_arquivos\exercicios\relatorios"))
+                apagar_estrutura_pastas(Path(r"gerenciamento_de_arquivos\paths\exercicio\relatorios"))
                 print(f"A pasta 'relatorios' foi apagada.\n{'-'*33}")
             case 6:
                 if not dados_entrada.exists():
